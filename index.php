@@ -118,10 +118,48 @@
   <section>
     <div class="" style="">
       <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-6" style="background-color:#b2d426;">.col-sm-6 .col-md-5 .col-lg-6</div>
-        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="background-color:#b2d426;">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+        <div class="col-sm-6 col-md-5 col-lg-6 paragraph-1" style="background-color: #181818;">
+          <div style="margin-left:190px; margin-top:100px; margin-bottom:100px; margin-right:50px;">
+            <p style="font-size: 90px; font-weight: 900; line-height:70px; color:white;">THINK<br><span style="color: #b2d426;">BIG.</span></p>
+            <br>
+            <p style="font-size: 30px; color: white;">Web Design Company in Los Angeles</p>
+            <br>
+            <p style="font-size: 16px; color: white;">At SPINX Digital, our team of innovators and digital marketers in tech and design bring skills above and beyond the ordinary to every project. Our Los Angeles web design and development team is involved in professional B2B and B2C web design and development, mobile applications, digital strategy, user experience, advertising, social media, content management systems, and email marketing initiatives.</p>
+            <br>
+            <p style="font-size: 14px; font-weight:700; color: #b2d426;">AWARD WINNING DIGITAL AGENCY</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="background-color:#181818;">
+          <!-- <div class="owl-carousel owl-theme">
+            <div class="item"><img src="assets/img/agenc"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+            <div class="item"><img src="img\profile\Mrr Nunia.jpg"></div>
+          </div> -->
+          <img src="assets/img/image-PF.jpg" style="margin-left: 50px; margin-top: 90px;">
+        </div>
       </div>
     </div>
+
+
+    <div class="" style="margin-top: 120px;">
+      <div class="" style="margin-left: 100px; margin-right: 140px;">
+        <center>
+          <p style="background-color: #b2d426; font-weight: 900; color:black; display:inline; font-size:1.5rem; letter-spacing:3px; line-height:29px;"><span style="position: relative; bottom:13px;">RECENT WORK</span></p>
+          <br><br>
+          <p>We have a deep understanding of user habits and behaviors. We are committed to using fact-based knowledge and our unique brand of innovation to help you dominate the competition. Every project is customized for optimum visibility and audience response.</p>
+          <br><br>
+        </center>
+      </div>
+    </div>
+
+
+
+
   </section>
 
 
@@ -130,7 +168,30 @@
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="owl.carousel.js"></script>
+
+  <script type="text/javascript">
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true
+    });
+    $('.play').on('click', function() {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function() {
+      owl.trigger('stop.owl.autoplay')
+    })
+  </script>
 </body>
 
 </html>
